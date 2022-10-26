@@ -13,7 +13,6 @@ function App() {
     useReducer(reducer, globalStore),
     "state"
   );
-
   return (
     <Store.Provider value={{ state, dispatch }}>
       <TodoForm />
@@ -21,6 +20,5 @@ function App() {
     </Store.Provider>
   );
 }
-
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
